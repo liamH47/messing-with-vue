@@ -24,16 +24,18 @@
         <ul>
           <li v-for='detail in details'>{{ detail }}</li>
         </ul>
+        <div class='hover-container'>
 
-        <div v-for='variant in variants'
-             :key='variant.variantId'
-             class='color-box'
-             @mouseover='updateProduct(variant.backgroundImage)'
-
-             >
-             <img class='small-product-image' :src='variant.backgroundImage'>
+          <div v-for='variant in variants'
+          :key='variant.variantId'
+          class='color-box'
+          @mouseover='updateProduct(variant.backgroundImage)'
+          
+          >
+          <img class='color-box-img' :src='variant.backgroundImage'>
           <!-- <p >{{ variant.variantName }}</p> -->
         </div>
+      </div>
 
         <button v-on:click='addToCart'>Add to Cart</button>
         <button v-if='cart > 0' v-on:click='removeFromCart'>Remove from Cart</button>

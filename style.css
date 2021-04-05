@@ -31,11 +31,9 @@ body {
     width: 80%;
   }
 
-  .small-product-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: fill;
+  .hover-container{
+    display: flex;
+    flex-direction: row;
   }
   
   .product-image,
@@ -45,11 +43,24 @@ body {
   }
   
   .color-box {
-    width: 40px;
-    height: 40px;
-    margin-top: 5px;
-    border: 1px solid blue;
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem;
   }
+  
+  .color-box img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    object-fit: fill;
+    /* display: block;
+    object-fit: fill; */
+  }
+ 
+
   
   .cart {
     margin-right: 25px;
